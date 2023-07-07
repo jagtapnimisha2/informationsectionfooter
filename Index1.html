@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo1"><a href="#"><img src="./logo.png" alt=""></a></div>
+            <ul class="links">
+                <li><a href="Home">Home</a></li>
+                <li><a href="Blog">Blog</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Login</a>
+            <div class="toggel_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="Home">Home</a></li>
+            <li><a href="Blog">Blog</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Contact">Contact</a></li>
+            <li><a href="#" class="action_btn">Login</a></li>
+        </div>
+    </header>
+   
+    <div class="r">
+    <div class="main1">
+    <div class="main_Body">
+        
+        <h1>Say Hi To</h1>
+        <div class="paragrap"><p>One Card</p></div>
+        <div class="paragrap2"><p>Co-branded Card Issuers:</p></div>
+        <div class="logo"><a href="#"><img src="./img1.png" alt=""></a></div>
+        <div class="logo"><a href="#"><img src="./img2.png" alt=""></a></div>
+        <div class="logo"><a href="#"><img src="./img3.png" alt=""></a></div><br>
+        <div class="img4"><a href="#"><img src="./img4.png" alt=""></a></div>
+        <div class="img4"><a href="#"><img src="./img5.png" alt=""></a></div>
+       <br>
+       <div class="para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus dolore quasi magni veritatis maiores nulla, odit eveniet, excepturi fuga totam numquam officia, reprehenderit sunt. Deleniti tempora magnam possimus illum.</p>
+    </div>
+   
+    </div>
+  
+    <div class="images">
+        <img src="./images.jpg" alt="">
+    </div>
+    
+</div>
+
+</div>
+<footer>
+    <div class="footer">
+        <div class="hh">
+        No Hidden Fees Ever
+        </div>
+        <br>
+        <div class="theroy">
+            <div class="thery1">No Joining Fees</div>
+            <div>No Annual Fees</div>
+            <div>No Rewards Redemption Fees.</div>
+        </div>
+    </div>
+   </footer>
+
+    <script>
+        const toggelbtn =document.querySelector('.toggel_btn')
+        const toggelbtnIcon=document.querySelector('.toggel_btn i')
+        const dropdownmenu=document.querySelector('.dropdown_menu')
+        toggelbtn.onclick = function(){
+            dropdownmenu.classList.toggle('open')
+            const isOpen =dropdownmenu.classList.contains('open')
+
+               // close marks
+        toggelbtnIcon.classList=isOpen
+        ?'fa-solid fa-xmark'
+        :'fa-solid fa-bars'
+        // <i class="fa-solid fa-xmark"></i>
+        // <i class="fa-regular fa-bars"></i>
+        }
+     
+    </script>
+   
+</body>
+</html>
